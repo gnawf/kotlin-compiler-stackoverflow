@@ -1,10 +1,8 @@
 package com.example
 
-import graphql.GraphqlErrorBuilder
-
 fun main() {
-    val error = GraphqlErrorBuilder.newError()
-        .message("test error")
+    val result = ConcreteBuilder.newBuilder()
+        .name("test")
         .build()
-    println("Error: $error")
+    println("Result: $result")
 }
